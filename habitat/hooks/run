@@ -1,0 +1,13 @@
+#!/bin/bash
+
+exec 2>&1
+
+echo "Starting SpringBoot Application"
+
+export JAVA_HOME=$(pkgPathFor core/jre8)
+
+JAVA_ARGS=""
+
+JAVA_ARGS="${JAVA_ARGS} -jar ${JAR_FILE} --server.port=8080"
+
+exec java ${JAVA_ARGS}
