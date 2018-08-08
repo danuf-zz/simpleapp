@@ -6,7 +6,7 @@ echo "Starting SpringBoot Application"
 
 export JAVA_HOME=$(pkgPathFor core/jre8)
 
-JAR_FILE=
+JAR_FILE="{{ pkg.path }}/app/rd-1.0-SNAPSHOT.jar"
 
 JAVA_ARGS=""
 
