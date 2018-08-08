@@ -8,5 +8,7 @@ do_build() {
 }
 
 do_install() {
-    cp /src/target/rd-1.0-SNAPSHOT.jar ${PREFIX}/
+  local app_path="$pkg_prefix/app"
+  mkdir -p $app_path
+  cp -R /src/target/rd-1.0-SNAPSHOT.jar $app_path/
 }
