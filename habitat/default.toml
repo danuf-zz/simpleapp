@@ -1,0 +1,3 @@
+[server]
+port = 8080
+artifact_name = price-type-rules-service-1.0-SNAPSHOT.jar
